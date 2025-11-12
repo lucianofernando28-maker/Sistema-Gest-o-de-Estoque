@@ -1,0 +1,63 @@
+section.container {
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+
+#main {
+  padding: 0;
+  margin: 0;
+  gap: 0;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+
+}
+
+.slide {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  /*Colocar em baixo do conteúdo*/
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  max-width: 100%;
+  height: 110vh;
+  z-index: 1;
+
+}
+
+.slide img {
+
+
+  /*Tamanho da imagem*/
+  width: 100vw;
+  height: 100vh;
+
+  /*Efeitos transição*/
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  animation: slide 1s infinite;
+  transition: transform 1s ease-in-out;
+
+
+  left: 0%;
+  right: 0%;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.slide img.ativa {
+  opacity: 1;
+}
