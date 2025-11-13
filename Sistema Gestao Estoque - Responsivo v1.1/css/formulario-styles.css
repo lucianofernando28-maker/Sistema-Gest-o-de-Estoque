@@ -1,54 +1,76 @@
 /*Configuração do main*/
 main {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  background-color: rgb(247, 236, 236);
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	background-color: rgb(247, 236, 236);
 }
 
 /*Configuração do section main*/
 main section {
-  max-width: 800px;
-  text-align: center;
+	max-width: 800px;
+	text-align: center;
 }
 
 /*Configuração do container*/
 .container {
-  width: 90%;
-  height: 80%;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+	width: 90%;
+	height: 80%;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
 
-  flex-direction: column;
-  display: flex;
-  color: rgb(0, 0, 0);
-  background-color: rgba(12, 189, 150, 0.4);
-  border-radius: 10px;
+	flex-direction: column;
+	display: flex;
+	color: rgb(0, 0, 0);
+	background-color: rgba(12, 189, 150, 0.4);
+	border-radius: 10px;
 }
 
+.formulario {
+	width: 100%;
+	max-width: 900px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	justify-content: center;
+	align-items: center;
+}
 
+label {
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: left;
+}
+.campo {
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+}
 /*Configuração de botões*/
 #cancelar-btn {
-  background-color: brown;
-  width: 30%;
+	background-color: brown;
+	width: 30%;
 }
 
+#btn-form {
+	width: 100%;
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+}
+btn-form
 /*Configuração do botão  adicionar*/
 #add-btn {
-  width: 30%;
-}
-
-
-/*Configuração do título*/
-h3 {
-  color: rgb(185, 6, 6);
+	width: 30%;
 }
 
 /*Configuração do link*/
 a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
+	text-decoration: none;
+	color: rgb(255, 255, 255);
 }
