@@ -23,11 +23,12 @@
 				<li>
 					<a href="../index.html"><b>Início</b></a>
 				</li>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<li>
+					<a href="formulario.html"><b>Adicionar novo produto</b></a>
+				</li>
 				<li>
 					<a href="tabelaProdutos.html"><b>Produtos em estoque</b></a>
 				</li>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<li>
 					<a href="sobre.html"><b>Sobre</b></a>
 				</li>
@@ -37,38 +38,51 @@
 		<!-- Conteúdo principal -->
 		<main>
 			<section class="container">
-				<h3>Adicionar novo produto</h3>
-				<br />
 				<!--Esse é o formulário para adicionar produto-->
-				<form action="tabelaProdutos.html">
-					<label for="Campo de Nome "><b>Nome do Produto</b></label>
-					<input type="text " placeholder=" Digite o novo Produto" /> <br />
+				<form class="formulario" action="tabelaProdutos.html">
+					<h2>Adicionar novo produto</h2>
+					<div class="campo">
+						<label for="nome"><b>Nome do Produto</b></label>
+						<input type="text" id="nome" placeholder="Digite o novo Produto" />
+					</div>
 
-					<label for="Campo do Preço"><b>Preço </b></label>
-					<input
-						type="number "
-						placeholder=" Digite o preço do produto"
-						required
-					/>
-					<br />
+					<div class="campo">
+						<label for="preco"><b>Preço </b></label>
+						<input
+							type="number "
+							id="preco"
+							placeholder="Digite o preço do produto"
+							required
+						/>
+					</div>
 
-					<label for="Campo da quantidade"><b>Quantidade</b></label>
-					<input type="number" placeholder=" Digite a quantidade" required />
-					<br />
+					<div class="campo">
+						<label for="quantidade"><b>Quantidade</b></label>
+						<input
+							type="number"
+							id="quantidade"
+							placeholder="Digite a quantidade"
+							required
+						/>
+					</div>
 
-					<label for="Campo do valor total"><b>Valor Total</b></label>
-					<input type="number" placeholder=" Digite o valor total" required />
-					<br />
+					<div class="campo">
+						<label for="valor-total"><b>Valor Total</b></label>
+						<input
+							type="number"
+							id="valor-total"
+							placeholder="Digite o valor total"
+							required
+						/>
+					</div>
 
-					<div class="section-btn button">
-						<button id=""><b>Adicionar</b></button
-						>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<div class="section-btn" id="btn-form">
+						<button id="add-btn"><b>Adicionar</b></button>
 						<button id="cancelar-btn">
 							<a href="tabelaProdutos.html"><b>Cancelar</b></a>
 						</button>
 					</div>
 				</form>
-				<br />
 			</section>
 		</main>
 
