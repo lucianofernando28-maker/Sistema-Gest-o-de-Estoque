@@ -1,70 +1,74 @@
+/*Configuração de tamanho da tabela*/
 table {
-  width: 70%;
-  height: 50%;
+	width: 70%;
+	height: 50%;
 
-  margin-left: auto;
-  margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
+/*Configuração de estilos extras de container*/
 #main {
-  display: grid;
-  grid-template-columns: 1fr;
+	display: grid;
+	grid-template-columns: 1fr;
 }
 
 .container {
-  width: 90%;
+	width: 90%;
+} /*Fim de configurações extras de container*/
 
-}
-
+/*Configuração de estilos de cabeçalho (colunas) tabela de produtos em estoque*/
 thead {
-  background-color: rgb(14, 137, 146);
-  color: rgb(255, 255, 255);
+	background-color: rgb(14, 137, 146);
+	color: rgb(255, 255, 255);
 }
-
+main > table {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*Configuração de cor de fundo do corpo da tabela (linhas)*/
 tbody {
-  background-color: rgb(206, 204, 203);
+	background-color: rgb(206, 204, 203);
 }
 
+/*Configuração de links*/
 a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
+	text-decoration: none;
+	color: rgb(255, 255, 255);
 }
-
-main>table {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+#acoes-title {
+	text-align: left;
+	padding: 10px;
 }
-
+/*Configuração de estilos de botão voltar*/
 .voltar {
-  color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
 }
 
-
-
+/*Configuração de estilos extras de container*/
 #container {
-  width: 90%;
-  height: 80%;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  flex-direction: column;
-  display: table-column;
-
+	width: 90%;
+	height: 80%;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	flex-direction: column;
+	display: table-column;
 }
-
-
-
-
+#section-btn {
+	align-items: center;
+}
+/*Configuração de estilos de botões de produtos em estoque*/
 #section-btn button {
-  width: 65%;
-  padding: 8px;
-  border: 1px solid rgb(128, 124, 127);
-  border-radius: 6px;
-  margin-bottom: 1rem;
-  font-size: 15;
-  transition: border-color 0.3s ease;
-  background-color: rgb(5, 91, 102);
-  color: white;
-  display: inline-block;
+	width: 50%;
+	padding: 2%;
+	border: 1px solid rgb(128, 124, 127);
+	border-radius: 6px;
+	margin-bottom: 1rem;
+	font-size: 15;
+	transition: border-color 0.3s ease;
+	background-color: rgb(5, 91, 102);
+	color: white;
+	display: inline-block;
 }
