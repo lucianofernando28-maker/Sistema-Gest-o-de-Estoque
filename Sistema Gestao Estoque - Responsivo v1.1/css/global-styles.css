@@ -2,263 +2,289 @@
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  font-family: "Segoe UI", Tahoma, Verdana;
-  gap: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: "Segoe UI", Tahoma, Verdana;
+	gap: 0;
 }
 
 /* Estrutura básica */
 html,
 body {
-  height: 100%;
-  width: 100%;
-  font-family: 'Arial', sans-serif;
+	height: 100%;
+	width: 100%;
+	font-family: "Arial", sans-serif;
 }
 
 /* Layout geral */
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 main {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  /*align-items: center;*/
-  padding: 2rem;
-  background-color: rgb(247, 236, 236);
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	/*align-items: center;*/
+	padding: 2rem;
+	background-color: rgb(247, 236, 236);
 }
 
 main section {
-  max-width: 800px;
-  text-align: center;
+	max-width: 800px;
+	text-align: center;
 }
 
 /* ===== NAVBAR ===== */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(27, 105, 105);
-  color: white;
-  padding: 1rem 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(27, 105, 105);
+	color: white;
+	padding: 1rem 1rem;
 }
-
 
 /* Links do menu */
 .nav-links {
-  list-style: none;
-  display: block;
-  gap: 0;
+	list-style: none;
+	display: block;
+	gap: 0;
 }
 
 .nav-links li a {
-  color: white;
-  text-decoration: none;
-
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .nav-links li a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
+	color: rgb(0, 0, 0);
 }
 
 /* Ícone menu mobile */
 .menu-toggle {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
+	display: none;
+	font-size: 1.8rem;
+	cursor: pointer;
 }
-
 
 .logo {
-  width: 100px;
+	width: 100px;
 }
-
 
 /*Configuração de caixas de entradas de formulários*/
 input {
-  width: 70%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  margin-bottom: 1rem;
-  font-size: 15;
-  transition: border-color 0.3s ease;
-  cursor: pointer;
-  transition: ease;
+	width: 80%;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	margin-bottom: 1rem;
+	font-size: 15;
+	transition: border-color 0.3s ease;
+	cursor: pointer;
+	transition: ease;
 }
 
 button {
-  width: 20%;
-  cursor: pointer;
-  transition: ease;
-  background-color: rgb(5, 91, 102);
+	width: 20%;
+	cursor: pointer;
+	transition: ease;
+	background-color: rgb(5, 91, 102);
 }
 
 button:hover {
-  background-color: #0056b3;
+	background-color: #0056b3;
 }
 
 .section-btn button {
-  padding: 8px;
-  border: 1px solid rgb(128, 124, 127);
-  border-radius: 6px;
-  margin-bottom: 1rem;
-  font-size: 15;
-  transition: border-color 0.3s ease;
-  background-color: rgb(5, 91, 102);
-  color: white;
-  display: inline-block;
+	padding: 8px;
+	border: 1px solid rgb(128, 124, 127);
+	border-radius: 6px;
+	margin-bottom: 1rem;
+	font-size: 15px;
+	transition: border-color 0.3s ease;
+	background-color: rgb(5, 91, 102);
+	color: white;
+	display: inline-block;
 }
 
 /* ===== FOOTER ===== */
 footer {
-  background: rgb(128, 124, 127);
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 1rem;
+	background: rgb(128, 124, 127);
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 1rem;
 }
 
 hr {
-  padding: 2px;
-  background-color: rgb(107, 7, 43);
-  border: none;
+	padding: 2px;
+	background-color: rgb(107, 7, 43);
+	border: none;
 }
 
-
+/*Configuração do título*/
+h2 {
+	color: rgb(107, 7, 43);
+	font-size: 2.5em;
+}
 
 /* ===== RESPONSIVIDADE ===== */
 
 /* Mobile */
 @media (max-width: 768px) {
+	.slide {
+		height: 400px;
+		/* Reduz a altura do slide em telas menores */
+	}
 
-  .slide {
-    height: 400px;
-    /* Reduz a altura do slide em telas menores */
-  }
+	.menu-toggle {
+		display: block;
+	}
 
-  .menu-toggle {
-    display: block;
-  }
+	.nav-links {
+		width: 55%;
+		height: 25%;
+		position: absolute;
+		top: 90px;
+		left: 45%;
+		right: 70%;
+		justify-items: center;
+		justify-content: center;
+		background-color: rgba(53, 53, 53, 0.8);
+		flex-direction: column;
+		align-items: start;
+		display: none;
+		gap: 5px;
 
+		z-index: 1000;
+	}
 
-  .nav-links {
-    width: 55%;
-    height: 15%;
-    position: absolute;
-    top: 90px;
-    left: 45%;
-    right: 70%;
-    justify-items: center;
-    justify-content: center;
-    background-color: rgba(53, 53, 53, 0.8);
-    flex-direction: column;
-    align-items: start;
-    display: none;
-    gap: 0;
+	.nav-links.active {
+		display: flex;
+	}
 
-    z-index: 1000;
-  }
+	.nav-links li {
+		margin: 2px;
+	}
 
-  .nav-links.active {
-    display: flex;
-  }
+	.container {
+		width: 90%;
+		height: auto;
+	}
 
-  .nav-links li {
-    margin: 2px;
-  }
+	.formulario {
+		padding: 20px;
+	}
+	input {
+		width: 90%;
+		justify-content: center;
+		align-items: start;
+	}
 
-  .container {
-    width: 90%;
-    height: auto;
-  }
+	label {
+		font-size: 11pt;
+	}
 
-  input {
-    width: 60%;
-    justify-content: center;
-    align-items: start;
-  }
+	main > table {
+		width: 90%;
+	}
 
-  label {
-    font-size: 9pt;
-  }
+	th {
+		font-size: 8pt;
+	}
 
-  main>table {
-    width: 90%;
+	td {
+		font-size: 8pt;
+	}
 
-  }
+	table {
+		width: 95%;
+	}
 
-  th {
-    font-size: 8pt;
-  }
+	#acoes-title {
+		display: none;
+	}
+	/*Configuração do botão  adicionar*/
+	#add-btn {
+		width: 35%;
+	}
+	#cancelar-btn {
+		background-color: brown;
+		width: 35%;
+	}
+	#section-btn {
+		width: 100%;
+		display: flex;
+		gap: 20px;
+		justify-content: center;
+	}
 
-  td {
-    font-size: 8pt;
-  }
+	#section-btn button {
+		overflow: hidden;
+		width: 40%;
+		height: 35px;
+	}
+	#sobre {
+		padding: 20px 15px;
+		/* Reduz o padding em telas pequenas */
+	}
 
-  table {
-    width: 95%;
-  }
+	#sobre h2 {
+		font-size: 1.5em;
+		/* Reduz o tamanho da fonte do título */
+	}
 
-  #sobre {
-    padding: 20px 15px;
-    /* Reduz o padding em telas pequenas */
-
-  }
-
-  #sobre h2 {
-    font-size: 1.5em;
-    /* Reduz o tamanho da fonte do título */
-  }
+	/*Configuração do título*/
+	h2 {
+		color: rgb(107, 7, 43);
+		font-size: 1.5em;
+	}
 }
 
 /* Tablet e Desktop */
 @media (min-width: 769px) {
-  #main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+	#main {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
 
-    grid-template-areas: "container  container   button"
-      "container container   button"
-      "container container  button";
-  }
+		grid-template-areas:
+			"container  container   button"
+			"container container   button"
+			"container container  button";
+	}
 
-  .nav-links {
-    display: flex !important;
-    font-size: 1.5rem;
-  }
+	.nav-links {
+		display: flex !important;
+		font-size: 1.2rem;
+		z-index: 100;
+		gap: 20px;
+	}
 
-  h1 {
-    display: none;
-  }
+	.container {
+		width: 80%;
+		height: auto;
+	}
 
-  .container {
-    width: 80%;
-    height: auto;
+	table {
+		width: 100%;
+	}
 
-  }
+	#container {
+		position-area: inherit;
+		grid-area: container;
+		gap: 0;
+	}
 
-  table {
-    width: 100%;
-
-  }
-
-  #container {
-    position-area: inherit;
-    grid-area: container;
-    gap: 0;
-  }
-
-  #section-btn {
-    flex-direction: column;
-    display: flex;
-    grid-area: button;
-    gap: 0;
-  }
-
+	#section-btn {
+		flex-direction: column;
+		display: flex;
+		grid-area: button;
+		gap: 0;
+	}
 }
